@@ -1,0 +1,26 @@
+// styles/global.scss
+$primary-color: #ff7300;
+$bg-color: #f4f4f4;
+
+body {
+  font-family: Arial, sans-serif;
+  background: $bg-color;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+.title {
+  text-align: center;
+  color: $primary-color;
+}
+
+.map-container,
+.chart-container {
+  margin-top: 20px;
+}
