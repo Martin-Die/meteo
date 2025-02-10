@@ -14,7 +14,7 @@ export default function Predictions() {
 
     return (
         <div>
-            <h1>Résultats des prédictions</h1>
+            <h1>Visualiser nos prédictions</h1>
             <button onClick={handlePredict}>Lancer les prédictions</button>
             <ul>
                 {predictions.map((prediction, index) => (

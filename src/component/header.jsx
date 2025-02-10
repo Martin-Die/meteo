@@ -33,7 +33,7 @@ const Header = () => {
                         onMouseEnter={() => setIsHomeHovered(true)}
                         onMouseLeave={() => setIsHomeHovered(false)}
                     >
-                        nom du site web
+                        Suivi météo
                     </Link>
                 </h1>
                 <nav>

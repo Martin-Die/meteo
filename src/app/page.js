@@ -12,7 +12,7 @@ const Home = () => {
     <div className='body'>
       <Header />
       <main>
-        <h1>Bievenue</h1>
+        <h1>Bienvenue</h1>
         <div className="container">
           <h1 className="title">Dashboard Météo</h1>
           <div className="map-container">
