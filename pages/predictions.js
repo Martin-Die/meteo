@@ -5,11 +5,19 @@ export default function Predictions() {
     const [predictions, setPredictions] = useState([]);
 
     const handlePredict = async () => {
-        const response = await fetch('/api/predict', {
-            method: 'POST',
-        });
-        const data = await response.json();
-        setPredictions(data.predictions);
+        try {
+            const response = await fetch('/api/predict', {
+                method: 'POST',
+            });
+            if (!response.ok) {
+                throw new Error('Erreur lors de la requête');
+            }
+            const data = await response.json();
+            setPredictions(data.predictions);
+        } catch (error) {
+            console.error(error);
+            alert('Erreur lors de la récupération des prédictions');
+        }
     };
 
     return (
